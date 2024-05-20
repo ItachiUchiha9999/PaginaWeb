@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pag css\stylecontacto.css">
+    <script src="https://kit.fontawesome.com/0b2defb275.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="../Imagenes\logo_transparent.png" alt="">
+            <div class="busq">
+                <input type="text" id="search" placeholder="Buscar...">
+                <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul>
+                <li><a href="../Paginas\productos.html"><i class="fa-regular fa-bell"></i> Mi Pedido</a></li>
+                <li><a href="../Paginas\carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+            </ul>
+        </nav>
+        <nav class="submenu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Paginas\productos.html"><i class="fa-solid fa-shop"></i> Productos</a></li>
+                <li><a href="../Paginas\trabajos.html">Trabajos</a></li>
+                <li><a href="../Paginas\contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="contact">
+                <div class="info">
+                    <h2>Cuentanos sobre<br>
+                    tu proyecto</h2>
+                    <p>Nos encantaria saber mas sobre tu proyecto de aberturas de<br>
+                    aluminio.¡Estamos aquí para ayudarte! Ponte en contacto<br>
+                    con nosotros para obtener más información, programar una<br>
+                    consulta o solicitar un presupuesto personalizado
+                    </p>
+                    <br>
+                    <p>Visítanos en nuestras local ubicado en San Juan 1488, Salta<br>
+                    Capital, Argentina
+                    </p>
+                    <br>
+                    <p>aberturasdealuminio.lc@gmail.com</p>
+                    <br>
+                    <p>+54 3876182065<br>
+                        +54 3876235506<br>
+                        +54 3875617358
+                    </p>
+                </div>
+
+                <form action="formulario" class="form">
+                    <div class="column">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="apellido">Apellido*</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="column">
+                        <label for="email">Email*</label>
+                        <input type="text" id="email" name="email" required>
+                        <label for="telefono">Telefono*</label>
+                        <input type="text" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="column">
+                        <label for="direccion">Direccion</label>
+                        <input type="text" id="direccion" name="direccion">
+                    </div>
+                    <div class="column">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto">
+                    </div>
+                    <div class="column">
+                        <label for="mensaje">Escribe tu mensaje aquí...</label>
+                        <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+                    </div>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </article>
+        <article>
+            <section class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14488.050560215726!2d-65.4236305!3d-24.7950207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc35bdc80ffdb%3A0xdbc9463300244b92!2sL.C%20Aberturas%20de%20Aluminio!5e0!3m2!1ses-419!2sar!4v1715036820761!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <h3>Politica de Privacidad</h3>
+        <h3>© 2024 Creado por L.C Aberturas</h3>
+        <a href="https://www.facebook.com/Aberturas.LC?locale=es_LA" class="face"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B5493875617358&context=ARBHRMgr-FFkM4FCRlIuIBKFqXG4yZ5VDREKy7Iwj-5Y4Ji_ohvYIpqe9OzYxaTJbEj1uRyqizlfYGsHm5d-JfUQoRail-YsvIQQqgLXEgoFAc1xl_BCUP7lz5gejacCvj0K5Cpo9BBiPmWKxm1UNzUE8w&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwZXh0bgNhZW0CMTAAAR0g2_nQdQJKVYozrrjemAxhISwEUX2fBwoPsXxepoNX36sLkhjkzLcOrjA_aem_AbWpHs_RwMHd7lL9ybc15VrxqW5tJEy-jVmQTdH7qsRy48pnK9b46uUGWaPIwzZxfL1ejaQacFS7CqWn-EupWkOX" class="what"><i class="fa-brands fa-whatsapp"></i></a>
+    </footer>
+
+</body>
+</html>

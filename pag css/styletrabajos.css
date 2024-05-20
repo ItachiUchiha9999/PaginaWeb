@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, #b65959 12%, #f6bc00 40%);
+    padding: 0;
+}
+
+header img{
+    width: 14%;
+    height: auto;
+}
+
+.menu{
+    order: 1;
+    font-size: 20px;
+}
+
+.submenu{
+    order: 2;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.submenu ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 120px;
+    position: relative;
+    bottom: 95px;
+    left: calc(100vh - 120px);
+    transition: .5s;
+}
+
+.submenu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 50px;
+    transition: .5s;
+}
+
+.menu a:hover,
+.submenu a:hover{
+    color: #cc0000;
+}
+
+.busq{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    margin-left: 250px;
+}
+
+.busq input[type="text"]{
+    width: 500px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.busq button{
+    height: 50px;
+    padding: 0 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 100%;
+    bottom: 0px;
+}
+
+.busq button:hover{
+    background-color: #cc0000;
+}
+
+
+.nuestro{
+    margin-left: 33%;
+    margin-top: 3%;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.nuestro h2{
+    margin-left: 18%;
+}
+
+.picture {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.picture img{
+    width: 45%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    transition: transform .3s ease;
+}
+
+.picture img:hover{
+    transform: scale(1.1);
+}
+
+.sue{
+    text-align: center;
+    background-color: #383232;
+    margin-top: 20px;
+}
+
+.sue p{
+    color: #ffff;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;    
+}
+
+.sue a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sue a:hover{
+    background-color: #9b5b31;
+    color: white;
+}
+
+.contact h2,.cont,
+.elegir h2,.info,.busq,
+.column,button,
+.nuestro{
+    opacity: 0;
+    animation: fade-in 1.5s ease forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer{
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+footer a {
+    font-size: 40px;
+    margin: 20px;
+}
+
+footer .face{
+    color: blue;
+}
+
+footer .what{
+    color: green;
+}

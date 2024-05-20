@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, #b65959 12%, #f6bc00 40%);
+    padding: 0;
+}
+
+header img {
+    width: 14%;
+    height: auto;
+}
+
+.menu {
+    order: 1;
+    font-size: 20px;
+}
+
+.submenu {
+    order: 2;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.submenu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 120px;
+    position: relative;
+    bottom: 95px;
+    left: calc(100vh - 120px);
+    transition: .5s;
+}
+
+.submenu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 50px;
+    transition: .5s;
+}
+
+.menu a:hover,
+.submenu a:hover{
+    color: #cc0000;
+}
+
+.busq {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    margin-left: 250px;
+}
+
+.busq input[type="text"] {
+    width: 500px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.busq button {
+    height: 50px;
+    padding: 0 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 100%;
+    bottom: 20px;
+}
+
+.busq button:hover {
+    background-color: #cc0000;
+}
+
+.contact{
+    background-color: #383232;
+    padding: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info{
+    grid-column: 1 / span 1;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.contact h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+
+.column {
+    flex: 0 1 calc(50% - 10px);
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 4px);
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent; 
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #fff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #000000;
+}
+
+button[type="submit"]:hover {
+    background-color: #d39647;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.maps{
+    margin-top: 20px;
+}
+.maps iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.contact h2,.cont,
+.elegir h2,.info,.busq,
+.column,button,
+img,.maps{
+    opacity: 0;
+    animation: fade-in 1.5s ease forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+footer a {
+    font-size: 40px;
+    margin: 20px;
+}
+
+footer .face{
+    color: blue;
+}
+
+footer .what{
+    color: green;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0b2defb275.js" crossorigin="anonymous"></script>
+    <title>L.C Aberturas</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="Imagenes\logo_transparent.png" alt="">
+            <div class="busq">
+                <input type="text" id="search" placeholder="Buscar...">
+                <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul>
+                <li><a href="Paginas\productos.html"><i class="fa-regular fa-bell"></i> Mi Pedido</a></li>
+                <li><a href="Paginas\carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+            </ul>
+        </nav>
+        <nav class="submenu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Paginas\productos.html"><i class="fa-solid fa-shop"></i> Productos</a></li>
+                <li><a href="Paginas\trabajos.html">Trabajos</a></li>
+                <li><a href="Paginas\contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="presentacion">
+            <section>
+                <img src="Imagenes\inicio.jpg" alt="" class="pres">
+                <h2>ABERTURAS DE<br>ALUMINIO DE ALTA<br>CALIDAD</h2>
+                <br>
+                <a href="Paginas\contacto.html" class="cont">Solicitar Presupuesto</a>
+            </section>
+        </article>
+        <article class="elegir">
+            <section>
+                <h2>¿Por qué elegirnos?</h2>
+                <br>
+                <div class="info">
+                    <div class="column">
+                        <h3 class="t1">Materiales de<br>primera calidad</h3>
+                        <p class="p1">Utilizamos materiales de<br>
+                        primera calidad para<br>
+                        para garantizar la satifaccion de<br>
+                        nuestros clientes
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h3 class="t2">Asesoramiento<br>personalizado</h3>
+                        <p class="p2">Nos destacamos por brindar<br>
+                        un servicio de asesoramiento<br>
+                        personalizado para que<br>
+                        nuestros clientes puedan elegir<br>
+                        las aberturas que mejor se<br>
+                        adapte a sus necesidades
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h3 class="t3">Instalacion<br>profesional</h3>
+                        <p class="p3">Contamos con un equipo de<br>
+                        profesionales altamente<br>
+                        capacitados que se encargan<br>
+                        de la instalacion para<br>
+                        garantizar un trabajo de<br>
+                        calidad
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h3 class="t4">Garantia<br>satifaccion</h3>
+                        <p class="p4">Ofrecemos una garantia de<br>
+                        satifaccion para que nuestros<br>
+                        clientes puedan tener la<br>
+                        tranquilidad de haber tomado<br>
+                        la mejor desicion
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section class="contact">
+                <div class="info2">
+                    <h2>Contactanos</h2>
+                    <p>Completa el formulario o llamanos para obtener una consulta</p>
+                    <p>personalizada sin cargo.</p>
+                    <br>
+                    <p>San Juan 1488,Salta Capital,Argentina</p>
+                    <br>
+                    <p>aberturasdealuminio.lc@gmail.com</p>
+                    <br>
+                    <p>+54-3876182065<br>+54-3876235506<br>+54-3875617358</p>
+                </div>
+                
+                <form action="formulario" class="form">
+                    <div class="column">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="apellido">Apellido*</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="column">
+                        <label for="email">Email*</label>
+                        <input type="text" id="email" name="email" required>
+                        <label for="telefono">Telefono*</label>
+                        <input type="text" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="column">
+                        <label for="direccion">Direccion</label>
+                        <input type="text" id="direccion" name="direccion">
+                    </div>
+                    <div class="column">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto">
+                    </div>
+                    <div class="column">
+                        <label for="mensaje">Escribe tu mensaje aquí...</label>
+                        <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+                    </div>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer> 
+        <h3>Politica de Privacidad</h3>
+        <h3>© 2024 Creado por L.C Aberturas</h3>
+        <a href="https://www.facebook.com/Aberturas.LC?locale=es_LA" class="face"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B5493875617358&context=ARBHRMgr-FFkM4FCRlIuIBKFqXG4yZ5VDREKy7Iwj-5Y4Ji_ohvYIpqe9OzYxaTJbEj1uRyqizlfYGsHm5d-JfUQoRail-YsvIQQqgLXEgoFAc1xl_BCUP7lz5gejacCvj0K5Cpo9BBiPmWKxm1UNzUE8w&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwZXh0bgNhZW0CMTAAAR0g2_nQdQJKVYozrrjemAxhISwEUX2fBwoPsXxepoNX36sLkhjkzLcOrjA_aem_AbWpHs_RwMHd7lL9ybc15VrxqW5tJEy-jVmQTdH7qsRy48pnK9b46uUGWaPIwzZxfL1ejaQacFS7CqWn-EupWkOX" class="what"><i class="fa-brands fa-whatsapp"></i></a>
+    </footer>
+</body>
+</html>
